@@ -63,6 +63,11 @@ Here are a few inputs and their respective output generated.
 3. ![third](./images/3.png)
 
 
+## Planned Architecture
+
+!(architecture)[./images/architecture.png]
+
+
 ## Limitations
 - As the dataset was primarily of women. There are certain artefacts when trying to generate output of men's clothing.
 - As the dataset didn't have any bottomwear. Therefore, the model can only work for tops/tshirts.
