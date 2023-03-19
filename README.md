@@ -55,6 +55,13 @@ All these values are then passed to the HR-VITON model and gives us our required
 		- 	It resizes the image to 384x512 pixels and saves it as "resized_img.jpg".
 		- 	It runs all the necessary modules as and when required.
 
+## Test Cases
+Here are a few inputs and their respective output generated.
+
+1. ![first](./images/1.png)
+2. ![second](./images/2.png)
+3. ![third](./images/3.png)
+
 
 ## References
 #### HR-VITON
