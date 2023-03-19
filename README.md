@@ -65,7 +65,7 @@ Here are a few inputs and their respective output generated.
 
 ## Planned Architecture
 
-!(architecture)[./images/architecture.png]
+![architecture](./images/architecture.png)
 
 
 ## Limitations
