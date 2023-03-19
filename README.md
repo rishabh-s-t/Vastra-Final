@@ -63,6 +63,13 @@ Here are a few inputs and their respective output generated.
 3. ![third](./images/3.png)
 
 
+## Limitations
+- As the dataset was primarily of women. There are certain artefacts when trying to generate output of men's clothing.
+- As the dataset didn't have any bottomwear. Therefore, the model can only work for tops/tshirts.
+- There is a known bug that crashes the scripts for some unidentified reason. If the given cloth image is named 'cloth_web.jpg' and if the given user image is named 'origin_web.jpg'.
+- The model starts failing at medium level poses.
+
+
 ## References
 #### HR-VITON
 https://github.com/sangyun884/HR-VITON
