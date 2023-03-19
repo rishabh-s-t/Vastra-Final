@@ -42,18 +42,18 @@ All these values are then passed to the HR-VITON model and gives us our required
 
 ## Code Overview
 - get_cloth_mask.py
-- 	get_cloth_mask.py is a Python script that uses a pre-trained model to create a binary mask of clothing from an input image. It loads an input image, applies normalization transformation, pads it to a multiple of 32, and converts it to a PyTorch tensor. It passes the tensor through a pre-trained model to obtain the mask and then threshold it to create a binary mask. It overlays the original image on top of a white background using the mask and saves the resulting image and the binary mask to files.
+	- 	get_cloth_mask.py is a Python script that uses a pre-trained model to create a binary mask of clothing from an input image. It loads an input image, applies normalization transformation, pads it to a multiple of 32, and converts it to a PyTorch tensor. It passes the tensor through a pre-trained model to obtain the mask and then threshold it to create a binary mask. It overlays the original image on top of a white background using the mask and saves the resulting image and the binary mask to files.
 - get_densepose.py
-- 	get_densepose.py is a Python script that takes a JSON file containing dense pose annotations for an input image and produces a visualization of the dense pose segmentation. It loads the JSON file, reads the segmentation information, and maps each segment to a predefined color in the colormap dictionary. It then creates an RGB image with the same size as the input image and overlays the segmented regions on top of a black background. Finally, it saves the resulting image to a file in the output directory.
+	- 	get_densepose.py is a Python script that takes a JSON file containing dense pose annotations for an input image and produces a visualization of the dense pose segmentation. It loads the JSON file, reads the segmentation information, and maps each segment to a predefined color in the colormap dictionary. It then creates an RGB image with the same size as the input image and overlays the segmented regions on top of a black background. Finally, it saves the resulting image to a file in the output directory.
 - get_seg_grayscale.py
-- 	This is a Python script that takes an input image and converts it into a grayscale segmentation map using predefined color values for different body parts. The input image is opened using the PIL library, and its size is extracted. The color values for different body parts are defined using an RGB colormap. The script then iterates over every pixel in the input image and assigns a grayscale value according to the corresponding color in the colormap. The resulting grayscale image is resized using OpenCV's resize function and saved as a PNG file using the PIL library.
+	- 	This is a Python script that takes an input image and converts it into a grayscale segmentation map using predefined color values for different body parts. The input image is opened using the PIL library, and its size is extracted. The color values for different body parts are defined using an RGB colormap. The script then iterates over every pixel in the input image and assigns a grayscale value according to the corresponding color in the colormap. The resulting grayscale image is resized using OpenCV's resize function and saved as a PNG file using the PIL library.
 - posenet.py
-- 	This code is a Python script that uses the PoseNet deep learning model to detect human poses in an image and save the resulting keypoints in a JSON file. 
+	- 	This code is a Python script that uses the PoseNet deep learning model to detect human poses in an image and save the resulting keypoints in a JSON file. 
 - main.py
-- 	This is the driver code for our implementation.
-- 	It reads an input image from the path "./static/origin_web.jpg" and resizes it to 768x1024 pixels.
-- 	It resizes the image to 384x512 pixels and saves it as "resized_img.jpg".
-- 	It runs all the necessary modules as and when required.
+	- 	This is the driver code for our implementation.
+		- 	It reads an input image from the path "./static/origin_web.jpg" and resizes it to 768x1024 pixels.
+		- 	It resizes the image to 384x512 pixels and saves it as "resized_img.jpg".
+		- 	It runs all the necessary modules as and when required.
 
 
 ## References
